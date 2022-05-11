@@ -116,7 +116,7 @@ if (walB == 4)
     {
         wynik = kwota * 1.15;
     }
-}
+} 
 
 if (walB == 1 && walP == 2)
 {
