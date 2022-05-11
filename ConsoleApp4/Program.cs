@@ -59,7 +59,11 @@ double wynik = 0;
 //double PrzelicznikZF = 5.47;
 if (walB == 1)
 {
-    if (walP == 2)
+    if (walP == walB)
+    {
+        Console.WriteLine("Wybrano jednakowe waluty!");
+    }
+    else if (walP == 2)
     {
         wynik = kwota / 4.45;
     }
@@ -74,7 +78,11 @@ if (walB == 1)
 }
 if (walB == 2)
 {
-    if (walP == 1)
+    if (walP == walB)
+    {
+        Console.WriteLine("Wybrano jednakowe waluty!");
+    }
+    else if(walP == 1)
     {
         wynik = kwota * 4.45;
     }
@@ -89,7 +97,11 @@ if (walB == 2)
 }
 if (walB == 3)
 {
-    if (walP == 1)
+    if (walP == walB)
+    {
+        Console.WriteLine("Wybrano jednakowe waluty!");
+    }
+    else if(walP == 1)
     {
         wynik = kwota * 4.7;
     }
@@ -104,7 +116,11 @@ if (walB == 3)
 }
 if (walB == 4)
 {
-    if (walP == 1)
+    if (walP == walB)
+    {
+        Console.WriteLine("Wybrano jednakowe waluty!");
+    }
+    else if(walP == 1)
     {
         wynik = kwota * 5.45;
     }
@@ -214,5 +230,6 @@ else if (walB == 4 && walP == 3)
     string y = walP.ToString(x);
     Console.WriteLine("Po przeliczeniu {0} {1} na {2} wyszło {3} {4}", kwota, z, y, wynik, y);
 }
-
+Console.WriteLine();
+Console.WriteLine("Naciśnij dowolny przycisk abyzakończyć...");
 Console.ReadKey();
